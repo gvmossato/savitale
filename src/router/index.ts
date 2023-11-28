@@ -16,6 +16,39 @@ const routes = [
       },
     ],
   },
+  {
+    path: '/store',
+    component: () => import('@/layouts/default/Default.vue'),
+    children: [
+      {
+        path: '',
+        name: 'Store',
+        component: () => import('@/views/Store.vue'),
+      },
+    ],
+  },
+  {
+    path: '/basket',
+    component: () => import('@/layouts/default/Default.vue'),
+    children: [
+      {
+        path: '',
+        name: 'Basket',
+        component: () => import('@/views/Basket.vue'),
+      },
+    ],
+  },
+  {
+    path: '/Login',
+    component: () => import('@/layouts/default/Default.vue'),
+    children: [
+      {
+        path: '',
+        name: 'Login',
+        component: () => import('@/views/Login.vue'),
+      },
+    ],
+  },
 ]
 
 const router = createRouter({

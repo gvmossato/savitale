@@ -10,7 +10,8 @@
         class="mt-8"
         color="primary"
         size="x-large"
-        prepend-icon="mdi-basket"
+        prepend-icon="mdi-shopping"
+        to="/store"
       >
         Começar
       </v-btn>

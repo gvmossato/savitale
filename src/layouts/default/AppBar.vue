@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar flat>
+  <v-app-bar>
     <v-app-bar-title>
       <v-container fluid>
         <v-row class="d-flex align-center">
@@ -8,16 +8,23 @@
           </v-col>
           <v-spacer />
           <v-col cols="12" sm="4">
-            <nav>
+            <nav class="d-flex justify-space-around">
               <v-btn prepend-icon="mdi-home" text="true" to="/">Início</v-btn>
-              <v-btn prepend-icon="mdi-information" text="true" to="/about">
-                Sobre
-              </v-btn>
-              <v-btn prepend-icon="mdi-basket" text="true" to="/store">
+              <v-btn prepend-icon="mdi-shopping" text="true" to="/store">
                 Loja
               </v-btn>
+              <v-badge v-model="cartAmount" :content="cartAmount" color="primary">
+                <v-btn
+                  prepend-icon="mdi-basket"
+                  text="true"
+                  to="/basket"
+                >
+                  Cesta
+                </v-btn>
+              </v-badge>
+
               <v-btn prepend-icon="mdi-account-circle" text="true" to="/login">
-                Login
+                Entrar
               </v-btn>
             </nav>
           </v-col>
@@ -26,3 +33,18 @@
     </v-app-bar-title>
   </v-app-bar>
 </template>
+
+<script lang="ts">
+import { computed } from "vue";
+import { useStore } from "vuex";
+
+export default {
+  name: "AppBar",
+
+  setup() {
+    const store = useStore();
+    const cartAmount = computed(() => store.getters.cartItemCount);
+    return { cartAmount };
+  },
+};
+</script>
