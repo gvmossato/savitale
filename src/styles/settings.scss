@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@400;700&family=Nunito:wght@400;700&display=swap');
+
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// https://vuetifyjs.com/features/sass-variables/`
+// @use 'vuetify/settings' with (
+//   $color-pack: false
+// );
+
+
+::root {
+    --color-primary: #407851;
+    --color-secondary: #559E6C;
+    --color-background: #EDEDE1;
+}
+
+body {
+    background-color: var(--color-background);
+    font-family: Nunito, sans-serif;
+}
+
+h1, h2 {
+    font-family: Montserrat, sans-serif;
+}
