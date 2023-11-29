@@ -39,7 +39,7 @@ const routes = [
     ],
   },
   {
-    path: '/Login',
+    path: '/login',
     component: () => import('@/layouts/default/Default.vue'),
     children: [
       {
