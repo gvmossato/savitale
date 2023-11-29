@@ -12,10 +12,9 @@ export default {
 
   data: () => ({
     carousel: [
-      "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
-      "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
-      "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
-      "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
+      "./src/assets/store/carousel/carousel1.png",
+      "./src/assets/store/carousel/carousel2.jpg",
+      "./src/assets/store/carousel/carousel3.jpg",
     ],
   }),
 };
