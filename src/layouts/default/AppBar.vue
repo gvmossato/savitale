@@ -4,7 +4,7 @@
       <v-container fluid>
         <v-row class="d-flex align-center">
           <v-col cols="12" sm="2">
-            <img src="@/assets/logo.svg" alt="logo" width="120" />
+            <img src="img/logo.svg" alt="logo" width="120" />
           </v-col>
           <v-spacer />
           <v-col cols="12" sm="4">

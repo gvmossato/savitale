@@ -1,6 +1,6 @@
 <template>
   <v-card class="text-center pa-4" hover>
-    <v-img :src="`./src/assets/store/items/${item.picture}`" height="200px">
+    <v-img :src="`img/store/items/${item.picture}`" height="200px">
       <v-overlay
         v-if="itemQuantity"
         v-model="showOverlay"
@@ -53,9 +53,9 @@
 
 <script lang="ts">
 import { Item } from "@/store";
+import { formatMoney } from "@/utils/format/number";
 import { computed } from "vue";
 import { useStore } from "vuex";
-import { formatMoney } from "@/utils/format/number";
 
 export default {
   name: "StoreItem",

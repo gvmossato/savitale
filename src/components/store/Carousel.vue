@@ -12,10 +12,11 @@ export default {
 
   data: () => ({
     carousel: [
-      "./src/assets/store/carousel/carousel1.png",
-      "./src/assets/store/carousel/carousel2.jpg",
-      "./src/assets/store/carousel/carousel3.jpg",
+      "img/store/carousel/carousel1.png",
+      "img/store/carousel/carousel2.jpg",
+      "img/store/carousel/carousel3.jpg",
     ],
   }),
 };
 </script>
+Y

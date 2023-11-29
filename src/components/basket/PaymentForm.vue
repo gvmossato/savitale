@@ -46,7 +46,7 @@
             <v-col>
               <v-img
                 class="ml-8"
-                src="@/assets/basket/credit-card.svg"
+                src="img/basket/credit-card.svg"
                 width="300"
               />
             </v-col>

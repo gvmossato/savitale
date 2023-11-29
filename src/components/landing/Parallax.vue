@@ -4,7 +4,7 @@
     height="800px"
   >
     <div class="overlay">
-      <img src="@/assets/logo.svg" alt="logo" width="600" />
+      <img src="img/logo.svg" alt="logo" width="600" />
       <h2 class="text-white mt-4">Resgatando sabores que nutrem o futuro</h2>
       <v-btn
         class="mt-8"

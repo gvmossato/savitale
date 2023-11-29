@@ -63,9 +63,9 @@
 
 <script lang="ts">
 import { Item } from "@/store";
+import { formatMoney } from "@/utils/format/number";
 import { computed, defineComponent } from "vue";
 import { useStore } from "vuex";
-import { formatMoney } from "@/utils/format/number";
 
 export default defineComponent({
   name: "BasketList",
@@ -100,7 +100,7 @@ export default defineComponent({
 
     const basketItems = basketStore.value.flatMap((el: Item) => {
       const item = {
-        prependAvatar: `./src/assets/store/items/${el.picture}`,
+        prependAvatar: `img/store/items/${el.picture}`,
         title: `
           <span class='text-primary font-weight-bold'>${el.quantity}x </span>
           <span>${formatMoney(el.price)} — </span>
