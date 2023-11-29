@@ -100,7 +100,7 @@ export default defineComponent({
 
     const basketItems = basketStore.value.flatMap((el: Item) => {
       const item = {
-        prependAvatar: `img/store/items/${el.picture}`,
+        prependAvatar: `/img/store/items/${el.picture}`,
         title: `
           <span class='text-primary font-weight-bold'>${el.quantity}x </span>
           <span>${formatMoney(el.price)} — </span>

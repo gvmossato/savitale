@@ -1,6 +1,6 @@
 <template>
   <v-card class="text-center pa-4" hover>
-    <v-img :src="`img/store/items/${item.picture}`" height="200px">
+    <v-img :src="`/img/store/items/${item.picture}`" height="200px">
       <v-overlay
         v-if="itemQuantity"
         v-model="showOverlay"

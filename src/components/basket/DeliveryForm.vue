@@ -3,7 +3,7 @@
     <v-toolbar color="primary">
       <v-toolbar-title>Entrega</v-toolbar-title>
     </v-toolbar>
-    <v-img class="mt-8" src="img/basket/delivery.svg" height="200" />
+    <v-img class="mt-8" src="/img/basket/delivery.svg" height="200" />
     <v-card-text>
       <v-form>
         <v-container>

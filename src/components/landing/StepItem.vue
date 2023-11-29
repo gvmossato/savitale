@@ -1,6 +1,6 @@
 <template>
   <v-layout class="d-flex flex-column text-center">
-    <img class="step" :src="`img/steps/${picture}`" :alt="alt" />
+    <img class="step" :src="`/img/steps/${picture}`" :alt="alt" />
     <h2 class="text-secondary ma-4">{{ title }}</h2>
     <p>{{ description }}</p>
   </v-layout>

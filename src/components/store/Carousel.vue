@@ -12,9 +12,9 @@ export default {
 
   data: () => ({
     carousel: [
-      "img/store/carousel/carousel1.png",
-      "img/store/carousel/carousel2.jpg",
-      "img/store/carousel/carousel3.jpg",
+      "/img/store/carousel/carousel1.png",
+      "/img/store/carousel/carousel2.jpg",
+      "/img/store/carousel/carousel3.jpg",
     ],
   }),
 };
