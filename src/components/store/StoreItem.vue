@@ -3,13 +3,13 @@
     <v-img :src="`./src/assets/store/items/${item.picture}`" height="200px">
       <v-overlay
         v-if="itemQuantity"
-        v-model="itemQuantity"
+        v-model="showOverlay"
         class="justify-center align-center"
         contained
       >
         <h2 class="text-white">Subtotal</h2>
         <h3 class="text-white">{{ item.weight * itemQuantity }} g</h3>
-        <h3 class="text-white">R$ {{ (item.price * itemQuantity).toFixed(2) }}</h3>
+        <h3 class="text-white">{{ formatMoney(item.price * itemQuantity) }}</h3>
       </v-overlay>
     </v-img>
 
@@ -18,20 +18,20 @@
       {{ item.weight }} g
     </v-card-subtitle>
 
-    <v-card-text class="text-h6"> R$ {{ item.price }} </v-card-text>
+    <v-card-text class="text-h6">{{ formatMoney(item.price) }}</v-card-text>
 
     <v-card-actions class="d-flex justify-center">
-      <div v-if="isInCart">
+      <div v-if="isInBasket">
         <v-btn
           icon="mdi-minus-box"
-          color="red"
+          color="error"
           class="ma-0"
           @click="updateQuantity(item.name, 'sub')"
         />
         <span class="ma-0">{{ itemQuantity }}</span>
         <v-btn
           icon="mdi-plus-box"
-          color="green"
+          color="success"
           class="ma-0"
           @click="updateQuantity(item.name, 'add')"
         />
@@ -52,9 +52,10 @@
 </template>
 
 <script lang="ts">
+import { Item } from "@/store";
 import { computed } from "vue";
 import { useStore } from "vuex";
-import { Item } from "@/store";
+import { formatMoney } from "@/utils/format/number";
 
 export default {
   name: "StoreItem",
@@ -69,28 +70,38 @@ export default {
   setup(props) {
     const store = useStore();
 
-    const isInCart = computed(
+    const isInBasket = computed(
       () =>
-        !!store.state.cart.find((item: Item) => item.name === props.item.name)
+        !!store.state.basket.find((item: Item) => item.name === props.item.name)
     );
 
     const itemQuantity = computed(
       () =>
-        store.state.cart.find((item: Item) => item.name === props.item.name)
+        store.state.basket.find((item: Item) => item.name === props.item.name)
           ?.quantity ?? 0
     );
 
     const updateQuantity = (itemName: string, operation: "add" | "sub") => {
       operation === "add"
-        ? store.commit("addToCart", props.item)
-        : store.commit("removeFromCart", itemName);
+        ? store.commit("addToBasket", props.item)
+        : store.commit("removeFromBasket", itemName);
     };
 
     return {
-      isInCart,
+      isInBasket,
       itemQuantity,
       updateQuantity,
     };
+  },
+
+  computed: {
+    showOverlay() {
+      return this.itemQuantity > 0;
+    },
+  },
+
+  methods: {
+    formatMoney,
   },
 };
 </script>

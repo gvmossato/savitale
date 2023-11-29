@@ -1,11 +1,11 @@
 <template>
-  <v-tooltip left text="Finalizar compra!">
+  <v-tooltip left text="Ver cesta">
     <template v-slot:activator="{ props }">
       <v-btn
         v-bind="props"
-        color="green"
-        :class="`float-br ${cartAmount ? 'animate' : ''}`"
-        icon="mdi-check"
+        color="success"
+        :class="`float-br ${basketAmount ? 'animate' : ''}`"
+        icon="mdi-basket-check"
         to="/basket"
       />
     </template>
@@ -21,8 +21,8 @@ export default {
 
   setup() {
     const store = useStore();
-    const cartAmount = computed(() => store.getters.cartItemCount);
-    return { cartAmount };
+    const basketAmount = computed(() => store.getters.basketItemCount);
+    return { basketAmount };
   },
 };
 </script>
