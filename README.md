@@ -1,69 +1,96 @@
-# base
+<p align="center">
+  <img src="https://i.ibb.co/54pYyp2/Logo.png" alt="savitale-mascot" width="150px" />
+  <span>       </span>
+  <img src="https://raw.githubusercontent.com/gvmossato/savitale/68f26d5570ee7f310fba89f6f64c9ec4cae25c7b/public/img/logo.svg" alt="savitale-logo" width="650px" />
+</p>
 
-## Project setup
+<br />
 
-```
-# yarn
-yarn
+<p align="center">  
+  <a href="https://vuejs.org/">
+    <img src="https://img.shields.io/badge/Vue.JS-3.2.0-42b883?style=for-the-badge&logo=vue.js&logoColor=42b883" alt="vue.js-badge" />
+  </a>
 
-# npm
-npm install
+  <a href="https://www.figma.com/">
+    <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="figma-badge" />
+  </a>
 
-# pnpm
-pnpm install
+  <a href="https://github.com/gvmossato/opus/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/gvmossato/savitale?color=blue&style=for-the-badge" alt="license-badge" />
+  </a>
+</p>
+ 
+***
 
-# bun
-bun install
-```
+<p align="center">
+  <a href="#-sobre">📚 Sobre</a> | 
+  <a href="#-app">📱 App</a>      |
+  <a href="#-site">🌎 Site</a>
+</p>
 
-### Compiles and hot-reloads for development
+<p align="center">
+  Nós <b>resgatamos frutas</b> que seriam descartadas por estarem <b>fora do padrão estético</b> que os supermecados buscam, oferecemos <b>cestas personalizadas</b> por aplicativo e <b>entregamos</b> tudo diretamente na porta da sua casa!
+</p>
+  
+<h4 align="center">
+  :star: Curtiu? Deixe uma estrela! :star:
+</h4>
+ 
+## 📚 Sobre
 
-```
-# yarn
-yarn dev
+A <b>Savitale</b> foi um projeto de faculdade para a disciplina <b>PRO3565 | Produção e Sustentabilidade</b> que consistiu em criar um plano de negócio e apresentar um MVP para uma startup com forte apelo sustentável, alinhando-se aos <a href="https://brasil.un.org/pt-br/sdgs">Objetivos para o Desenvolvimento Sustentável</a> propostos pela ONU.
 
-# npm
-npm run dev
+<p align="center">
+  <img src="https://i.ibb.co/tZyqK2f/ods.png" alt="ods"  width="250px" />
+</p>
 
-# pnpm
-pnpm dev
+<p align="center">
+Assim, nesse repositório se encontra o mockup funcional do site, na perspectiva do frontend, em que o usuário pode simular todo o processo de compra, desde a escolha das frutas, personalizando a sua cesta, até à confirmação do pedido. Além disso, também foram desenhadas telas do aplicativo através do software <a href="https://www.figma.com/">Figma</a>, afim de ilustrar o que poderia vir a ser o aplicativo da proposta.
 
-# bun
-pnpm run dev
-```
+## 📱 App
 
-### Compiles and minifies for production
+<br />
 
-```
-# yarn
-yarn build
+<p align="center">
+  <img src="https://i.ibb.co/D7rckg4/Splash.png" alt="splash-screen" width="250px" />
+  <span> </span>
+  <img src="https://i.ibb.co/gF3TryN/Signin.png" alt="signin-screen" width="250px" />
+</p>
 
-# npm
-npm run build
+<h4 align="center">
+  <i>Splash screen</i> e tela de login do aplicativo
+</h4>
 
-# pnpm
-pnpm build
+<br />
+<br />
 
-# bun
-pnpm run build
-```
+<p align="center">
+  <img src="https://i.ibb.co/bL6wVrb/Onboarding-1.png" alt="onboarding1-screen" width="250px" />
+  <span> </span>
+  <img src="https://i.ibb.co/kXsbNN8/Onboarding-2.png" alt="onboarding2-screen" width="250px" />
+  <span> </span>
+  <img src="https://i.ibb.co/41kc16m/Onboarding-3.png" alt="onboarding3-screen" width="250px" />
+</p>
 
-### Lints and fixes files
+<h4 align="center">
+  Telas de <i>onboarding</i> do usuário
+</h4>
 
-```
-# yarn
-yarn lint
+<br />
+<br />
 
-# npm
-npm run lint
+<p align="center">
+  <img src="https://i.ibb.co/Dg3z7cx/Store.png" alt="store-screen" width="250px" />
+  <span> </span>
+  <img src="https://i.ibb.co/dbt6gYR/Order.png" alt="order-screen" width="250px" />
+  <span> </span>
+  <img src="https://i.ibb.co/8P17Rcc/Delivery.png" alt="delivery-screen" width="250px" />
+</p>
 
-# pnpm
-pnpm lint
+<h4 align="center">
+  Simulação das principais interfaces de usuário
+</h4>
 
-# bun
-pnpm run lint
-```
+## 🌎 Site
 
-### Customize configuration
-
-See [Configuration Reference](https://vitejs.dev/config/).
+[TO DO]
