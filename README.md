@@ -93,4 +93,8 @@ Assim, nesse repositório se encontra o mockup funcional do site, na perspectiva
 
 ## 🌎 Site
 
+<p align="center">
+  <img src="https://i.ibb.co/jVTNgQM/site-intro.gif" alt="site-intro" />
+</p>
+
 [TO DO]
