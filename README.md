@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="https://i.ibb.co/6wTpSn6/Logo.png" alt="savitale-mascot" width="145px" />
+  <img src="https://i.ibb.co/6wTpSn6/Logo.png" alt="savitale-mascot" width="135px" />
   <span>       </span>
-  <img src="https://raw.githubusercontent.com/gvmossato/savitale/68f26d5570ee7f310fba89f6f64c9ec4cae25c7b/public/img/logo.svg" alt="savitale-logo" width="650px" />
+  <img src="https://raw.githubusercontent.com/gvmossato/savitale/68f26d5570ee7f310fba89f6f64c9ec4cae25c7b/public/img/logo.svg" alt="savitale-logo" width="550px" />
 </p>
 
 <br />
@@ -65,11 +65,11 @@ Assim, nesse repositório se encontra o mockup funcional do site, na perspectiva
 <br />
 
 <p align="center">
-  <img src="https://i.ibb.co/tcNYFkz/Onboarding-1.png" alt="onboarding1-screen" width="250px" />
+  <img src="https://i.ibb.co/tcNYFkz/Onboarding-01.png" alt="onboarding1-screen" width="250px" />
   <span> </span>
-  <img src="https://i.ibb.co/djLbK8Y/Onboarding-2.png" alt="onboarding2-screen" width="250px" />
+  <img src="https://i.ibb.co/djLbK8Y/Onboarding-02.png" alt="onboarding2-screen" width="250px" />
   <span> </span>
-  <img src="https://i.ibb.co/587q7Xr/Onboarding-3.png" alt="onboarding3-screen" width="250px" />
+  <img src="https://i.ibb.co/587q7Xr/Onboarding-03.png" alt="onboarding3-screen" width="250px" />
 </p>
 
 <h4 align="center">
