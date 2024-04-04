@@ -93,8 +93,26 @@ Assim, nesse repositório se encontra o mockup funcional do site, na perspectiva
 
 ## 🌎 Site
 
+<span>       </span>
+
 <p align="center">
-  <img src="https://i.ibb.co/jVTNgQM/site-intro.gif" alt="site-intro" />
+  <img src="./misc/site-intro.gif" alt="site-intro" />
+  <br />
+  <span><b>Página inicial da loja</b></span>
 </p>
 
-[TO DO]
+<span>       </span>
+
+<p align="center">
+  <img src="./misc/site-buy.gif" alt="site-buy" />
+  <br />
+  <span><b>Escolha de frutas para uma cesta</b></span>
+</p>
+
+<span>       </span>
+
+<p align="center">
+  <img src="./misc/site-checkout.gif" alt="site-checkout" />
+  <br />
+  <span><b><i>Checkout</i> da compra</b></span>
+</p>
